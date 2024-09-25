@@ -17,11 +17,28 @@ struct Event {
     
     var daysString: String? {
         guard let day = date.days(from: Date.today) else { return nil }
-        
         if day >= 0 {
             return "D-\(abs(day))"
         }
         return "D+\(abs(day))"
     }
     
+    var dateString: String? {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy.MM.dd"
+        return formatter.string(from: date)
+    }
+    
+    var iconImage:UIImage? {
+        return UIImage(named: icon)
+    }
+    
 }
+
+/// 더미 데이터
+var events = [
+    Event(date: Date(year: 2002, month: 5, day: 31), title: "한일 월드컵", backgroundColor: .orange, textColor: .white, icon: "soccer"),
+    Event(date: Date(year: 2022, month: 11, day: 20), title: "카타르 월드컵", backgroundColor: .yellow, textColor: .white, icon: "soccer"),
+    Event(date: Date(year: 2026, month: 6, day: 11), title: "북중미 월드컵", backgroundColor: .brown, textColor: .white, icon: "soccer"),
+]
+

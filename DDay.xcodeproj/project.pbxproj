@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AB0D98412CA3D112003F68B8 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0D98402CA3D112003F68B8 /* Event.swift */; };
+		AB0D98442CA3EA5C003F68B8 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0D98432CA3EA5C003F68B8 /* EventTableViewCell.swift */; };
 		ABEF731E2CA174FF001DBAF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEF731D2CA174FF001DBAF4 /* AppDelegate.swift */; };
 		ABEF73202CA174FF001DBAF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEF731F2CA174FF001DBAF4 /* SceneDelegate.swift */; };
 		ABEF73222CA174FF001DBAF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEF73212CA174FF001DBAF4 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		AB0D98402CA3D112003F68B8 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		AB0D98432CA3EA5C003F68B8 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		ABEF731A2CA174FF001DBAF4 /* DDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABEF731D2CA174FF001DBAF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABEF731F2CA174FF001DBAF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +51,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		AB0D98422CA3EA41003F68B8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AB0D98432CA3EA5C003F68B8 /* EventTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		ABEF73112CA174FF001DBAF4 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +78,7 @@
 		ABEF731C2CA174FF001DBAF4 /* DDay */ = {
 			isa = PBXGroup;
 			children = (
+				AB0D98422CA3EA41003F68B8 /* Cell */,
 				AB0D983F2CA3D0FE003F68B8 /* Model */,
 				ABEF73312CA183CA001DBAF4 /* Util */,
 				ABEF731D2CA174FF001DBAF4 /* AppDelegate.swift */,
@@ -160,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB0D98442CA3EA5C003F68B8 /* EventTableViewCell.swift in Sources */,
 				ABEF73222CA174FF001DBAF4 /* ViewController.swift in Sources */,
 				ABEF73332CA183E2001DBAF4 /* Date+Util.swift in Sources */,
 				ABEF731E2CA174FF001DBAF4 /* AppDelegate.swift in Sources */,
