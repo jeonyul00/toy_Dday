@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB0D98412CA3D112003F68B8 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0D98402CA3D112003F68B8 /* Event.swift */; };
 		ABEF731E2CA174FF001DBAF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEF731D2CA174FF001DBAF4 /* AppDelegate.swift */; };
 		ABEF73202CA174FF001DBAF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEF731F2CA174FF001DBAF4 /* SceneDelegate.swift */; };
 		ABEF73222CA174FF001DBAF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEF73212CA174FF001DBAF4 /* ViewController.swift */; };
 		ABEF73252CA174FF001DBAF4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = ABEF73242CA174FF001DBAF4 /* Base */; };
 		ABEF73272CA17500001DBAF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABEF73262CA17500001DBAF4 /* Assets.xcassets */; };
 		ABEF732A2CA17500001DBAF4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = ABEF73292CA17500001DBAF4 /* Base */; };
+		ABEF73332CA183E2001DBAF4 /* Date+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEF73322CA183E2001DBAF4 /* Date+Util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB0D98402CA3D112003F68B8 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		ABEF731A2CA174FF001DBAF4 /* DDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABEF731D2CA174FF001DBAF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABEF731F2CA174FF001DBAF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		ABEF73262CA17500001DBAF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABEF73292CA17500001DBAF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABEF732B2CA17500001DBAF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABEF73322CA183E2001DBAF4 /* Date+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Util.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB0D983F2CA3D0FE003F68B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB0D98402CA3D112003F68B8 /* Event.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		ABEF73112CA174FF001DBAF4 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +68,8 @@
 		ABEF731C2CA174FF001DBAF4 /* DDay */ = {
 			isa = PBXGroup;
 			children = (
+				AB0D983F2CA3D0FE003F68B8 /* Model */,
+				ABEF73312CA183CA001DBAF4 /* Util */,
 				ABEF731D2CA174FF001DBAF4 /* AppDelegate.swift */,
 				ABEF731F2CA174FF001DBAF4 /* SceneDelegate.swift */,
 				ABEF73212CA174FF001DBAF4 /* ViewController.swift */,
@@ -65,6 +79,14 @@
 				ABEF732B2CA17500001DBAF4 /* Info.plist */,
 			);
 			path = DDay;
+			sourceTree = "<group>";
+		};
+		ABEF73312CA183CA001DBAF4 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				ABEF73322CA183E2001DBAF4 /* Date+Util.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +161,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABEF73222CA174FF001DBAF4 /* ViewController.swift in Sources */,
+				ABEF73332CA183E2001DBAF4 /* Date+Util.swift in Sources */,
 				ABEF731E2CA174FF001DBAF4 /* AppDelegate.swift in Sources */,
 				ABEF73202CA174FF001DBAF4 /* SceneDelegate.swift in Sources */,
+				AB0D98412CA3D112003F68B8 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
