@@ -12,6 +12,8 @@
 		AB2A36722CA4588300D55F57 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2A36712CA4588300D55F57 /* CategoryCollectionViewCell.swift */; };
 		AB2A36742CA4F92500D55F57 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2A36732CA4F92500D55F57 /* CategoryViewController.swift */; };
 		AB2A36762CA5114100D55F57 /* DateSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2A36752CA5114100D55F57 /* DateSelectionViewController.swift */; };
+		AB50532D2CA5192200B87ABC /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB50532C2CA5192200B87ABC /* ColorCollectionViewCell.swift */; };
+		AB50532F2CA51AA100B87ABC /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB50532E2CA51AA100B87ABC /* ComposeViewController.swift */; };
 		ABEF731E2CA174FF001DBAF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEF731D2CA174FF001DBAF4 /* AppDelegate.swift */; };
 		ABEF73202CA174FF001DBAF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEF731F2CA174FF001DBAF4 /* SceneDelegate.swift */; };
 		ABEF73222CA174FF001DBAF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEF73212CA174FF001DBAF4 /* ViewController.swift */; };
@@ -27,6 +29,8 @@
 		AB2A36712CA4588300D55F57 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		AB2A36732CA4F92500D55F57 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		AB2A36752CA5114100D55F57 /* DateSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectionViewController.swift; sourceTree = "<group>"; };
+		AB50532C2CA5192200B87ABC /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
+		AB50532E2CA51AA100B87ABC /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		ABEF731A2CA174FF001DBAF4 /* DDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABEF731D2CA174FF001DBAF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABEF731F2CA174FF001DBAF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +66,7 @@
 			children = (
 				AB0D98432CA3EA5C003F68B8 /* EventTableViewCell.swift */,
 				AB2A36712CA4588300D55F57 /* CategoryCollectionViewCell.swift */,
+				AB50532C2CA5192200B87ABC /* ColorCollectionViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -93,6 +98,7 @@
 				ABEF73212CA174FF001DBAF4 /* ViewController.swift */,
 				AB2A36732CA4F92500D55F57 /* CategoryViewController.swift */,
 				AB2A36752CA5114100D55F57 /* DateSelectionViewController.swift */,
+				AB50532E2CA51AA100B87ABC /* ComposeViewController.swift */,
 				ABEF73232CA174FF001DBAF4 /* Main.storyboard */,
 				ABEF73262CA17500001DBAF4 /* Assets.xcassets */,
 				ABEF73282CA17500001DBAF4 /* LaunchScreen.storyboard */,
@@ -180,11 +186,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB50532D2CA5192200B87ABC /* ColorCollectionViewCell.swift in Sources */,
 				AB0D98442CA3EA5C003F68B8 /* EventTableViewCell.swift in Sources */,
 				ABEF73222CA174FF001DBAF4 /* ViewController.swift in Sources */,
 				ABEF73332CA183E2001DBAF4 /* Date+Util.swift in Sources */,
 				ABEF731E2CA174FF001DBAF4 /* AppDelegate.swift in Sources */,
 				AB2A36742CA4F92500D55F57 /* CategoryViewController.swift in Sources */,
+				AB50532F2CA51AA100B87ABC /* ComposeViewController.swift in Sources */,
 				ABEF73202CA174FF001DBAF4 /* SceneDelegate.swift in Sources */,
 				AB2A36762CA5114100D55F57 /* DateSelectionViewController.swift in Sources */,
 				AB2A36722CA4588300D55F57 /* CategoryCollectionViewCell.swift in Sources */,
