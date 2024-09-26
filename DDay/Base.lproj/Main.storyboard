@@ -423,7 +423,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="제목을 입력해주세요." textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="LqB-Fo-uLQ">
-                                <rect key="frame" x="0.0" y="292" width="393" height="50"/>
+                                <rect key="frame" x="20" y="292" width="353" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="LOu-vv-2VF"/>
                                 </constraints>
@@ -436,6 +436,8 @@
                         <constraints>
                             <constraint firstItem="7n5-lm-Jlh" firstAttribute="leading" secondItem="TDZ-62-JwJ" secondAttribute="leading" id="0W7-Aw-lH0"/>
                             <constraint firstItem="FAY-05-fKw" firstAttribute="leading" secondItem="twy-mO-E9X" secondAttribute="leading" id="2Me-IT-4Ai"/>
+                            <constraint firstItem="LqB-Fo-uLQ" firstAttribute="leading" secondItem="TDZ-62-JwJ" secondAttribute="leading" constant="20" id="5kR-mp-qZr"/>
+                            <constraint firstItem="LqB-Fo-uLQ" firstAttribute="trailing" secondItem="TDZ-62-JwJ" secondAttribute="trailing" constant="-20" id="AlA-4j-czj"/>
                             <constraint firstItem="U50-bN-pMm" firstAttribute="trailing" secondItem="FAY-05-fKw" secondAttribute="trailing" id="Ceo-2B-7pG"/>
                             <constraint firstItem="twy-mO-E9X" firstAttribute="top" secondItem="TDZ-62-JwJ" secondAttribute="top" constant="20" id="Cg7-dw-Wr4"/>
                             <constraint firstItem="FAY-05-fKw" firstAttribute="top" secondItem="7n5-lm-Jlh" secondAttribute="bottom" constant="20" id="DpZ-mb-vzg"/>
@@ -449,8 +451,6 @@
                             <constraint firstItem="bM0-LV-sxq" firstAttribute="leading" secondItem="7n5-lm-Jlh" secondAttribute="leading" id="fbI-45-gTZ"/>
                             <constraint firstItem="bM0-LV-sxq" firstAttribute="trailing" secondItem="7n5-lm-Jlh" secondAttribute="trailing" id="iCQ-fI-QMi"/>
                             <constraint firstItem="LqB-Fo-uLQ" firstAttribute="top" secondItem="U50-bN-pMm" secondAttribute="bottom" constant="5" id="lx3-0a-sD5"/>
-                            <constraint firstItem="LqB-Fo-uLQ" firstAttribute="leading" secondItem="TDZ-62-JwJ" secondAttribute="leading" id="qMX-Fi-wyw"/>
-                            <constraint firstItem="LqB-Fo-uLQ" firstAttribute="trailing" secondItem="TDZ-62-JwJ" secondAttribute="trailing" id="udS-Kn-SH7"/>
                             <constraint firstItem="U50-bN-pMm" firstAttribute="top" secondItem="bM0-LV-sxq" secondAttribute="bottom" constant="20" id="zaQ-AY-oXZ"/>
                             <constraint firstItem="FAY-05-fKw" firstAttribute="leading" secondItem="TDZ-62-JwJ" secondAttribute="leading" constant="20" id="zif-lo-VUk"/>
                         </constraints>
