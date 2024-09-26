@@ -12,3 +12,5 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     
 }
+
+
