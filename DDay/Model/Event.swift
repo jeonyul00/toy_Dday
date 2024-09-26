@@ -9,28 +9,72 @@ import Foundation
 import UIKit
 
 struct Event {
+    enum Category: String, CaseIterable {
+        case birthday
+        case briefcase
+        case diet
+        case wedding
+        case travel
+        case exam
+        case soccer
+        case baseball
+        case basketball
+        
+        var title: String {
+            switch self {
+            case .birthday:
+                return "생일"
+            case .briefcase:
+                return "업무"
+            case .diet:
+                return "다이어트"
+            case .wedding:
+                return "결혼"
+            case .travel:
+                return "여행"
+            case .exam:
+                return "시험"
+            case .soccer:
+                return "축구"
+            case .baseball:
+                return "야구"
+            case .basketball:
+                return "농구"
+            }
+        }
+    }
+    
+    
     let date: Date
     let title: String
     let backgroundColor: UIColor
     let textColor: UIColor
     let icon: String
+    let daysString: String?
+    let dateString: String?
+    let iconImage:UIImage?
     
-    var daysString: String? {
-        guard let day = date.days(from: Date.today) else { return nil }
-        if day >= 0 {
-            return "D-\(abs(day))"
+    init(date: Date, title: String, backgroundColor: UIColor, textColor: UIColor, icon: String) {
+        self.date = date
+        self.title = title
+        self.backgroundColor = backgroundColor
+        self.textColor = textColor
+        self.icon = icon
+        
+        if let day = date.days(from: Date.today) {
+            if day >= 0 {
+                daysString = "D-\(abs(day))"
+            } else {
+                daysString = "D+\(abs(day))"
+            }
+        } else {
+            daysString = nil
         }
-        return "D+\(abs(day))"
-    }
-    
-    var dateString: String? {
+        
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy.MM.dd"
-        return formatter.string(from: date)
-    }
-    
-    var iconImage:UIImage? {
-        return UIImage(named: icon)
+        dateString = formatter.string(from: date)
+        iconImage = UIImage(named: icon)
     }
     
 }

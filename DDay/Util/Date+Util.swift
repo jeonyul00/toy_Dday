@@ -25,7 +25,7 @@ extension Date {
     func days(from date: Date) -> Int? {
         let calendar = Calendar.current
         let from = calendar.startOfDay(for: date)
-        let to = calendar.startOfDay(for: self) // 왜 self를 전달하지? -> 호출한 객체의 현재 날짜.
+        let to = calendar.startOfDay(for: self)
         return calendar.dateComponents([.day], from: from, to: to).day
     }
     
