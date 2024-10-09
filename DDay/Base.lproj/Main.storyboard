@@ -150,6 +150,9 @@
                             <constraint firstItem="ulC-9n-35s" firstAttribute="top" secondItem="ais-Ip-Gj4" secondAttribute="bottom" id="qdj-SO-DH9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="eventTableView" destination="ulC-9n-35s" id="I1W-JL-eDf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

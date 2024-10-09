@@ -18,7 +18,14 @@ class CategoryViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let cell = sender as? UICollectionView, let
+        if let cell = sender as? UICollectionViewCell, let indexPath = categoryCollectionView.indexPath(for: cell) {
+            data.category = Event.Category.allCases[indexPath.item]
+            
+            if let vc = segue.destination as? DateSelectionViewController {
+                vc.data = data
+                
+            }
+        }
     }
     
     func setupLayout() {

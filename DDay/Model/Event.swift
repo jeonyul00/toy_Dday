@@ -77,6 +77,10 @@ struct Event {
         iconImage = UIImage(named: icon)
     }
     
+    init(data: ComposeData) {
+        self.init(date: data.date!, title: data.title!, backgroundColor: data.backgroundColor!, textColor: data.textColor!, icon: data.category!.rawValue)
+    }
+    
 }
 
 /// 더미 데이터
