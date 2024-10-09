@@ -14,6 +14,7 @@
 		AB2A36762CA5114100D55F57 /* DateSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2A36752CA5114100D55F57 /* DateSelectionViewController.swift */; };
 		AB50532D2CA5192200B87ABC /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB50532C2CA5192200B87ABC /* ColorCollectionViewCell.swift */; };
 		AB50532F2CA51AA100B87ABC /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB50532E2CA51AA100B87ABC /* ComposeViewController.swift */; };
+		AB5053312CA53A6900B87ABC /* ComposeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5053302CA53A6900B87ABC /* ComposeData.swift */; };
 		ABEF731E2CA174FF001DBAF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEF731D2CA174FF001DBAF4 /* AppDelegate.swift */; };
 		ABEF73202CA174FF001DBAF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEF731F2CA174FF001DBAF4 /* SceneDelegate.swift */; };
 		ABEF73222CA174FF001DBAF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEF73212CA174FF001DBAF4 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 		AB2A36752CA5114100D55F57 /* DateSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectionViewController.swift; sourceTree = "<group>"; };
 		AB50532C2CA5192200B87ABC /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
 		AB50532E2CA51AA100B87ABC /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		AB5053302CA53A6900B87ABC /* ComposeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeData.swift; sourceTree = "<group>"; };
 		ABEF731A2CA174FF001DBAF4 /* DDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABEF731D2CA174FF001DBAF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABEF731F2CA174FF001DBAF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				AB0D98402CA3D112003F68B8 /* Event.swift */,
+				AB5053302CA53A6900B87ABC /* ComposeData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				AB0D98442CA3EA5C003F68B8 /* EventTableViewCell.swift in Sources */,
 				ABEF73222CA174FF001DBAF4 /* ViewController.swift in Sources */,
 				ABEF73332CA183E2001DBAF4 /* Date+Util.swift in Sources */,
+				AB5053312CA53A6900B87ABC /* ComposeData.swift in Sources */,
 				ABEF731E2CA174FF001DBAF4 /* AppDelegate.swift in Sources */,
 				AB2A36742CA4F92500D55F57 /* CategoryViewController.swift in Sources */,
 				AB50532F2CA51AA100B87ABC /* ComposeViewController.swift in Sources */,

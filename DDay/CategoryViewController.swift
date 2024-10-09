@@ -10,10 +10,15 @@ import UIKit
 class CategoryViewController: UIViewController {
     
     @IBOutlet weak var categoryCollectionView: UICollectionView!
+    var data = ComposeData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayout()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let cell = sender as? UICollectionView, let
     }
     
     func setupLayout() {
@@ -41,7 +46,6 @@ extension CategoryViewController:UICollectionViewDataSource, UICollectionViewDel
         let category = Event.Category.allCases[indexPath.row]
         cell.categoryImageView.image = UIImage(named: category.rawValue)
         cell.titleLabel.text = category.title
-
         return cell
     }
     

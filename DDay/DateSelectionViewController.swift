@@ -9,6 +9,8 @@ import UIKit
 
 class DateSelectionViewController: UIViewController {
     
+    var data: ComposeData?
+    
     @IBOutlet weak var daysLabel: UILabel!
     @IBOutlet weak var selectedDateLabel: UILabel!
     @IBOutlet weak var datePicker: UIDatePicker!
@@ -30,7 +32,6 @@ class DateSelectionViewController: UIViewController {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy.MM.dd"
         selectedDateLabel.text = formatter.string(from: sender.date)
-        
     }
     
     @IBAction func toggleCalendarMode(_ sender: UIBarButtonItem) {
