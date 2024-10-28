@@ -53,6 +53,7 @@ struct Event {
     let daysString: String?
     let dateString: String?
     let iconImage:UIImage?
+    let dayLeft:Int
     
     init(date: Date, title: String, backgroundColor: UIColor, textColor: UIColor, icon: String) {
         self.date = date
@@ -64,11 +65,14 @@ struct Event {
         if let day = date.days(from: Date.today) {
             if day >= 0 {
                 daysString = "D-\(abs(day))"
+                dayLeft = day
             } else {
                 daysString = "D+\(abs(day))"
+                dayLeft = day
             }
         } else {
             daysString = nil
+            dayLeft = 0
         }
         
         let formatter = DateFormatter()

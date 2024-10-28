@@ -8,26 +8,47 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var eventTableView: UITableView!
+    var sortedEvents = [Event]()
+    var sortType: SortType {
+        let type = UserDefaults.standard.integer(forKey: "sortType")
+        return SortType(rawValue: type) ?? .futureFirst
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        refresh()
         NotificationCenter.default.addObserver(forName: .eventDidInsert, object: nil, queue: .main) { _ in
             self.eventTableView.reloadData()
         }
+    }
+    
+    @IBAction func toggleSort(_ sender: Any) {
+        sortType.toggle()
+        refresh()
+    }
+    
+    func refresh(){
+        switch sortType {
+        case .futureFirst:
+            sortedEvents = events.sorted { $0.dayLeft > $1.dayLeft }
+        case .pastFirst:
+            sortedEvents = events.sorted { $0.dayLeft < $1.dayLeft }
+        }
+        eventTableView.reloadData()
     }
 }
 
 extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return events.count
+        return sortedEvents.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "EventTableViewCell", for: indexPath) as! EventTableViewCell        
-        let target = events[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "EventTableViewCell", for: indexPath) as! EventTableViewCell
+        let target = sortedEvents[indexPath.row]
         cell.iconImageView.image = target.iconImage
         cell.titleLabel.text = target.title
         cell.dateLabel.text = target.dateString
